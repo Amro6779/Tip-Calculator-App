@@ -1,0 +1,17 @@
+* , *::after , *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(196, 229, 232);
+    font-family: "Space Mono", monospace;
+}
+
+p{
+    color: rgb(0, 73, 77);
+}
+
+label{
+    color: rgb(94, 122, 125);
+}
