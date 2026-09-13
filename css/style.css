@@ -1,17 +1,102 @@
-* , *::after , *::before {
-    margin: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(196, 229, 232);
-    font-family: "Space Mono", monospace;
+:root {
+  --green: rgb(38, 192, 171);
+  --green900: rgb(0, 73, 77);
+  --gray500: rgb(94, 122, 125);
+  --gray400: rgb(127, 156, 159);
+  --gray200: rgb(196, 229, 232);
+  --gray50: rgb(244, 250, 251);
 }
 
-p{
-    color: rgb(0, 73, 77);
+body {
+  background-color: var(--gray200);
+  font-family: "Space Mono", monospace;
 }
 
-label{
-    color: rgb(94, 122, 125);
+.container {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+p {
+  color: var(--green900);
+}
+
+label {
+  color: var(--gray500);
+}
+
+input {
+  background-color: var(--gray50) !important;
+  color: var(--green900) !important;
+  direction: rtl;
+  font-size: larger !important;
+  font-weight: bolder !important;
+}
+input::placeholder {
+  color: var(--gray400) !important;
+  direction: rtl;
+}
+.btn {
+  background-color: var(--green900);
+  color: var(--gray50);
+  width: 90px;
+}
+
+.btn:hover {
+  background-color: var(--green);
+}
+
+.tips input{
+    width: 90px;
+    height: 37.6px;
+}
+
+#custom-tip::placeholder {
+    font-size: 20px !important;
+    padding-right: 5px;
+}
+
+.bill img{
+  top: 34px;
+  left: 14px;
+}
+.people-number img{
+  top: 35px;
+  left: 13px;
+}
+
+.tip-total {
+  background-color: var(--green900);
+}
+
+.tip-total button {
+  background-color: var(--green);
+  color: var(--green900);
+}
+
+
+.tip-total button:hover{
+    background-color: var(--gray200);
+}
+
+
+.tip-total .number {
+  color: var(--green);
+}
+
+.form-control:focus {
+  border-color: var(--green) !important;
+  box-shadow: 0 0 1px 3px var(--green);
+}
+
+.form-control:hover{
+    cursor: pointer;
 }

@@ -10,35 +10,71 @@
         rel="stylesheet">
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
 
-    <div class="container">
-        <div class="title">
-            <p><span>SPLI</span><span>TTER</span></p>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="title text-center">
+            <p class="fw-bold fs-5 d-flex flex-column"><span>SPLI</span><span>TTER</span></p>
         </div>
 
-        <div class="calculator">
-            <div class="tip-calculating">
-                <div class="bill">
+        <div class="calculator bg-body mt-5 d-flex p-5 w-75 rounded-4 gap-5">
+            <div class="tip-calculating w-75">
+                <div class="bill position-relative">
+                    <img class="position-absolute" src="./images/icon-dollar.svg" alt="dollar-icon">
                     <label for="bill-amount">Bill</label>
-                    <input type="number" id="bill-amount" class="form-control">
+                    <input id="bill-input" type="number" id="bill-amount" class="form-control" placeholder="0">
+                    <div class="invalid-feedback">
+                        can't be zero
+                    </div>
                 </div>
-                <div class="tip-percentage">
-                    <button type="button" class="btn">5%</button>
-                    <button type="button" class="btn">10%</button>
-                    <button type="button" class="btn">15%</button>
-                    <button type="button" class="btn">25%</button>
-                    <button type="button" class="btn">50%</button>
-                    <input type="number" placeholder="custom">
+                <div class="tip-percentage mt-5">
+                    <div class="tips row g-3">
+                        <p>Select Tip %</p>
+                        <div class="col-4"><button type="button" class="tip-button btn">5%</button></div>
+                        <div class="col-4"><button type="button" class="tip-button btn">10%</button></div>
+                        <div class="col-4"><button type="button" class="tip-button btn">15%</button></div>
+                        <div class="col-4"><button type="button" class="tip-button btn">25%</button></div>
+                        <div class="col-4"><button type="button" class="tip-button btn">50%</button></div>
+                        <div class="col-4"><input id="custom-tip-input" type="number" id="custom-tip"
+                                placeholder="custom" class="form-control p-0"></div>
+                    </div>
                 </div>
-                <inp class="people-number">
+                <div class="people-number mt-5 position-relative">
+                    <img class="position-absolute" src="./images/icon-person.svg" alt="person-icon">
                     <label for="number-of-people">Number of people</label>
-                    <input type="number" id="number-of-people">
+                    <input id="people-number-input" type="number" class="form-control"
+                        placeholder="0">
+                    <div class="invalid-feedback">
+                        can't be zero
+                    </div>
                 </div>
+            </div>
+            <div class="tip-total w-75 rounded-4 p-5">
+                <div class="caption1 d-flex justify-content-between">
+                    <div class="text">
+                        <p class="text-light">Tip amount</p>
+                        <p class="text-secondary">/person</p>
+                    </div>
+                    <div class="price">
+                        <p id="number1" class="number fs-1">$0,00</p>
+                    </div>
+                </div>
+                <div class="caption2 d-flex justify-content-between mt-4">
+                    <div class="text">
+                        <p class="text-light">Total</p>
+                        <p class="text-secondary">/person</p>
+                    </div>
+                    <div class="price">
+                        <p id="number2" class="number fs-1">$0,00</p>
+                    </div>
+                </div>
+
+                <button id=" reset-button" type="button" class=" btn mt-5 fw-bold w-100 ">Reset</button>
             </div>
         </div>
     </div>
