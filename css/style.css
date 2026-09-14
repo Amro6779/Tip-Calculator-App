@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+input[type="number"]::-webkit-inner-spin-button , 
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 :root {
   --green: rgb(38, 192, 171);
   --green900: rgb(0, 73, 77);
@@ -57,11 +63,11 @@ input::placeholder {
 .tips input{
     width: 90px;
     height: 37.6px;
+    padding-right: 10px !important;
 }
 
 #custom-tip::placeholder {
     font-size: 20px !important;
-    padding-right: 5px;
 }
 
 .bill img{

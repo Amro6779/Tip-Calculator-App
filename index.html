@@ -27,7 +27,7 @@
                 <div class="bill position-relative">
                     <img class="position-absolute" src="./images/icon-dollar.svg" alt="dollar-icon">
                     <label for="bill-amount">Bill</label>
-                    <input id="bill-input" type="number" id="bill-amount" class="form-control" placeholder="0">
+                    <input type="number" id="bill-amount" class="form-control" placeholder="0">
                     <div class="invalid-feedback">
                         can't be zero
                     </div>
@@ -40,13 +40,13 @@
                         <div class="col-4"><button type="button" class="tip-button btn">15%</button></div>
                         <div class="col-4"><button type="button" class="tip-button btn">25%</button></div>
                         <div class="col-4"><button type="button" class="tip-button btn">50%</button></div>
-                        <div class="col-4"><input id="custom-tip-input" type="number" id="custom-tip"
+                        <div class="col-4"><input  type="number" id="custom-tip"
                                 placeholder="custom" class="form-control p-0"></div>
                     </div>
                 </div>
                 <div class="people-number mt-5 position-relative">
                     <img class="position-absolute" src="./images/icon-person.svg" alt="person-icon">
-                    <label for="number-of-people">Number of people</label>
+                    <label for="people-number-input">Number of people</label>
                     <input id="people-number-input" type="number" class="form-control"
                         placeholder="0">
                     <div class="invalid-feedback">
@@ -61,7 +61,7 @@
                         <p class="text-secondary">/person</p>
                     </div>
                     <div class="price">
-                        <p id="number1" class="number fs-1">$0,00</p>
+                        <p id="number1" class="number fs-1">$0.00</p>
                     </div>
                 </div>
                 <div class="caption2 d-flex justify-content-between mt-4">
@@ -70,11 +70,11 @@
                         <p class="text-secondary">/person</p>
                     </div>
                     <div class="price">
-                        <p id="number2" class="number fs-1">$0,00</p>
+                        <p id="number2" class="number fs-1">$0.00</p>
                     </div>
                 </div>
 
-                <button id=" reset-button" type="button" class=" btn mt-5 fw-bold w-100 ">Reset</button>
+                <button id="reset-button" type="button" class=" btn mt-5 fw-bold w-100 disabled">Reset</button>
             </div>
         </div>
     </div>
