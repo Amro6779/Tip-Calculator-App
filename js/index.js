@@ -15,20 +15,21 @@ tipButton.forEach((button) => {
   });
 });
 
+billInput.addEventListener("input", calculateTipAmount);
+numberOfPeople.addEventListener("input", calculateTipAmount);
+customTipInput.addEventListener("input", calculateTipAmount);
 
+function calculateTipAmount() {
+  if (customTipInput.value != "") {
+    tipPercent = Number(customTipInput.value);
+  } else {
+    tipPercent = 0;
+  }
 
-billInput.addEventListener("input" , calculateTipAmount);
-numberOfPeople.addEventListener("input" , calculateTipAmount);
-customTipInput.addEventListener("input" , calculateTipAmount);
-
-function calculateTipAmount(){
-    if (customTipInput.value != "") {
-        tipPercent = Number(customTipInput.value);
-    }
-
-    let tipTotal = billInput.value * (tipPercent / 100);
-    let tipPerPerson = tipTotal / numberOfPeople.value;
-    let totalPerPerson = (Number(billInput.value) + tipTotal) / numberOfPeople.value
-    tipAmount.innerText = tipPerPerson.toFixed(2);
-    total.innerText = totalPerPerson.toFixed(2);
-};
+  let tipTotal = billInput.value * (tipPercent / 100);
+  let tipPerPerson = tipTotal / numberOfPeople.value;
+  let totalPerPerson =
+    (Number(billInput.value) + tipTotal) / numberOfPeople.value;
+  tipAmount.innerText = tipPerPerson.toFixed(2);
+  total.innerText = totalPerPerson.toFixed(2);
+}
