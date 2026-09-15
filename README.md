@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add your GitHub repo link here](https://github.com/Amro6779/Tip-Calculator-App)
-- Live Site URL: [Add your live site link here](https://amro6779.github.io/Tip-Calculator-App/)
+- Solution URL: (https://github.com/Amro6779/Tip-Calculator-App)
+- Live Site URL: (https://amro6779.github.io/Tip-Calculator-App/)
 
 ## My process
 
