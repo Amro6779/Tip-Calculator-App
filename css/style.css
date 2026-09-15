@@ -25,6 +25,12 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+.active{
+  background-color: var(--green) !important;
+  color:black ;
+  border: 0;
+}
+
 .container {
   position: absolute;
   top: 10%;
@@ -105,4 +111,9 @@ input::placeholder {
 
 .form-control:hover{
     cursor: pointer;
+}
+
+.disabled{
+  background-color: var(--green) !important;
+  border: 0;
 }
